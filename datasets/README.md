@@ -29,7 +29,7 @@
     <td align="center">1</td><td align="center">Python</td>
     <td align="center"><sub>family venv</sub></td></tr>
 
-<tr><td rowspan="2"><b>⚡ GPU kernel optimization</b></td>
+<tr><td rowspan="1"><b>⚡ GPU kernel optimization</b></td>
     <td><a href="gpukernel"><code>gpukernel</code></a></td>
     <td align="center">1</td><td align="center">CUDA / Triton</td>
     <td align="center"><sub>GPU + server</sub></td></tr>

@@ -8,7 +8,7 @@ GPU-kernel tasks adapted from [GPUMode](https://github.com/gpu-mode) and [Kernel
 | **cumsum** | Batched cumsum | `cumsum.triton` |
 | **asymmetricmatmul** | Asymmetric matmul | `asymmetricmatmul.triton` |
 
-Output must match the reference element-wise within `EVAL_TOLERANCE = 2e-2` (absolute and relative). Score is `1 / geomean(latency)` over the several declared shape in `server/tasks/{task}/task.yml`.
+Output must match the reference element-wise within the absolute and relative `TOLERANCE` specified in `server/tasks/{task}/task.yml`. The evaluated shapes are also declared in the same task.yml file. The score is computed as 1 / geomean(latency) over those declared shapes.
 
 ## Architecture
 
